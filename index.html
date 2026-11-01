@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Janu Akka ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1b1035, #49245f, #8d477c);
+    color: white;
+    overflow-x: hidden;
+}
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#ffc6e5 1px, transparent 1px);
+    background-size: 55px 55px, 90px 90px;
+    background-position: 0 0, 30px 40px;
+    opacity: 0.35;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.welcome {
+    text-align: center;
+    max-width: 650px;
+    animation: appear 1.5s ease;
+}
+
+.envelope {
+    font-size: 75px;
+    margin-bottom: 20px;
+    animation: float 2s infinite ease-in-out;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(40px, 8vw, 65px);
+    color: #ffd5eb;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #f8e5f3;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff9ecb, #f5c2e7);
+    color: #4b2458;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 25px #ff9ecb55;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 30px #ff9ecb88;
+}
+
+.letter {
+    display: none;
+    max-width: 900px;
+    width: 100%;
+    background: #fff7fc;
+    color: #54334f;
+    padding: clamp(22px, 5vw, 50px);
+    border-radius: 25px;
+    box-shadow: 0 15px 60px #00000055;
+    animation: appear 1.2s ease;
+    margin: 30px 0;
+}
+
+.letter h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(35px, 7vw, 52px);
+    color: #bd5c91;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.letter p {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 23px;
+    text-align: left;
+}
+
+.special {
+    color: #b34480;
+    font-weight: 600;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #bd5c91;
+}
+
+.ending {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: #bd5c91;
+    margin-top: 30px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 22px;
+    animation: rise 7s linear infinite;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% { opacity: 0.8; }
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .letter {
+        padding: 22px;
+    }
+
+    .letter p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+    <!-- WELCOME SCREEN -->
+    <div class="welcome" id="welcome">
+
+        <div class="envelope">💌</div>
+
+        <h1>My Dear Janu Akka ❤️</h1>
+
+        <p>
+            Some people enter our lives unexpectedly and become
+            the most beautiful part of our journey.
+            You are one of those people, Akka. 🥹
+            <br><br>
+            I have something special to tell you.
+            Open this little surprise with all your heart. 💗
+        </p>
+
+        <button onclick="openLetter()">
+            Open My Message 💌
+        </button>
+
+    </div>
+
+
+    <!-- COMPLETE LETTER -->
+    <div class="letter" id="letter">
+
+        <h2>My Dearest Janu Akka Garu… 🥹❤️🫂</h2>
+
+        <p>
+            Asalu yem cheppali, ekkada nunchi start cheyyali,
+            ela express cheyyali ani kuda artham avatledhu, Janu…
+            Ne gurinchi cheppali ante na daggara words kuda
+            saripovu. Entha cheppina, enni pages raasina,
+            na heart lo neeku unna place ni explain cheyyadam
+            matram chala kastam. Because you're not just a person
+            in my life, you're one of the most beautiful feelings
+            that life has given me. ❤️
+        </p>
+
+        <p>
+            Akka, honestly, for others you might just be a senior.
+            Someone they know from college, someone they talk to,
+            someone who is a part of their college life.
+            But for me, you're much more than that. You're not just
+            my senior, you're my sister. Not by blood, not by family
+            relation, but by heart, by emotions, by the attachment
+            I have towards you. And sometimes I feel that heart
+            relationships are even more beautiful because we choose
+            those people, and they slowly become our family. 🥺💗
+        </p>
+
+        <p>
+            Nuvvu na life loki ela vachavo, eppudu intha special
+            ayyavo naaku teliyadhu. But one thing I know is that
+            somewhere along the way, you became someone I never
+            want to lose. Neetho matladina small conversations,
+            nee messages, nee presence, nee way of talking,
+            everything has become special to me. Maybe for you,
+            avi normal moments ayyi undochu, but for me,
+            those little things hold so much meaning.
+        </p>
+
+        <p>
+            Sometimes, I really wish I could explain how much you
+            mean to me without actually saying anything. Because
+            konni feelings words lo cheppalem akka. Just heart lo
+            feel avvali anthe. Nuvvu naaku entha special oo,
+            ninnu entha care chesthano, nee happiness naaku
+            entha important oo, ivanni oka message lo cheppadam
+            possible kaadhu.
+        </p>
+
+        <p>
+            You know what, akka? Life lo chala mandi people meet
+            avutharu. Some stay for a few days, some for a few
+            months, and some become beautiful memories. But very
+            few people become a part of our hearts. You're one
+            among those rare people for me. I don't know what
+            I did to deserve a person like you in my life,
+            but I'm genuinely thankful that I got you as my Akka.
+            🦋❤️
+        </p>
+
+        <p>
+            Nuvvu happy ga unte naaku kuda chala happiness ga
+            untundhi. Nuvvu sad ga unte, I wish I could take away
+            all your sadness. Nee problems anni solve cheyyaleka
+            poyina, at least nee face lo smile chudali ani
+            anipisthundhi. You deserve all the beautiful things
+            in this world, akka. You deserve genuine love,
+            unlimited happiness, endless success and people who
+            value you just as much as you deserve.
+        </p>
+
+        <p>
+            I may not be the perfect person, I may not always know
+            how to express my feelings, and sometimes I may disturb
+            you with my silly talks, childish behaviour and endless
+            messages. 😂❤️ But please never think that my affection
+            towards you is just temporary. It's something that
+            comes genuinely from my heart.
+        </p>
+
+        <p>
+            And akka, one thing I want you to remember forever…
+            <br><br>
+            College life won't last forever. One day, we'll
+            complete our studies. Everyone will get busy with
+            their own careers, responsibilities and lives.
+            Maybe we won't meet every day like we do now.
+            Maybe our conversations will become less frequent.
+            Maybe distance will come between us. But I really
+            hope that time and distance never change the beautiful
+            bond we share.
+        </p>
+
+        <p>
+            I don't want you to remember me just as a junior
+            from your college. I want you to remember me as
+            your little Teju, who genuinely loves you, respects
+            you and feels lucky to call you her Akka. 🥹🫂
+        </p>
+
+        <p>
+            I don't know how our future will be, where life
+            will take us, or how many years will pass. But
+            whenever you need someone to talk to, someone to
+            share your happiness with, or someone to remind you
+            how special you are, I hope you remember that your
+            Teju is always cheering for you.
+        </p>
+
+        <p>
+            Thank you for being a part of my life, Janu Akka.
+            Thank you for being someone so special without even
+            realising how much happiness you bring. Thank you
+            for giving me a relationship that doesn't need a
+            blood connection to feel like family.
+        </p>
+
+
+        <!-- YOUR NEW PERSONAL PARAGRAPH -->
+        <p>
+            And akka, one more thing I want to tell you.
+            Andaru nenu yedho relationship lo unna ani
+            anukuntunnaru, kani nenu elanti relationships lo lenu.
+            I hope you understand me and my feelings.
+            <br><br>
+            And one thing akka, nenu neeku yentha value isthano,
+            yentha special ga chusthano ee oka mata lo cheptha.
+            <br><br>
+
+            <span class="special">
+                Akka, nenu bayatiki kanipinchinantha happy ga ledhu
+                ani neeku maatrame telusu...
+            </span>
+
+            <br><br>
+            Naa outer version ni evaraina chustharu, naa smile ni
+            evaraina chudochu. Kani naa inner version ni,
+            naa feelings ni, naa silent pain ni ardham
+            chesukunna vallalo nuvvu chaala special, akka.
+            <br><br>
+            Nenu bayatiki ela unna, lopala em feel avuthunnano
+            neeku telusu. And that means so much to me.
+            I may not share everything with everyone, but
+            with you I feel understood.
+            <br><br>
+            <span class="special">
+                You're not just someone who knows my outer version.
+                You're one of the very few people who has seen
+                my inner version too.
+            </span>
+            <br><br>
+            Anduke nuvvu naaku intha special, Akka.
+            Nuvvu naaku just oka senior kaadhu, just oka akka
+            kuda kaadhu. Naa heart ki chaala close aina person vi.
+            <br><br>
+            <span class="special">
+                You are mine, Akka — not in any relationship
+                meaning, but in that special sisterly bond
+                that I never want to lose. ❤️
+            </span>
+        </p>
+
+
+        <!-- ORIGINAL ENDING -->
+        <p>
+            Finally, I just want to say…
+            <br><br>
+            <span class="special">
+                You're not just my senior. You're my sister by
+                heart, my favourite person, my beautiful blessing
+                and one of the sweetest relationships I'll always
+                cherish.
+            </span> ❤️
+            <br><br>
+            No matter how far we go, no matter how much life
+            changes, you'll always be my Janu Akka. My bond
+            with you will always remain special.
+        </p>
+
+        <p>
+            I wish all your dreams come true. I wish you get
+            everything your heart silently wishes for.
+            I wish you never lose that beautiful smile.
+            And I wish life treats you with all the love
+            and kindness you deserve.
+        </p>
+
+        <p class="special">
+            Love you endlessly, my Janu Akka Garu! 🥹❤️🫂
+        </p>
+
+        <div class="signature">
+            With lots and lots of love,<br>
+            Your little Teju… 💗🦋
+        </div>
+
+        <div class="ending">
+            Not sisters by blood, but connected by a bond
+            that my heart never wants to lose.
+            <br>
+            Forever and always… ♾️💕
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function openLetter() {
+
+    document.getElementById("welcome").style.display = "none";
+
+    document.getElementById("letter").style.display = "block";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+// Floating hearts animation
+
+const emojis = ["❤️", "💗", "💕", "🦋", "✨", "💖"];
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+        emojis[Math.floor(Math.random() * emojis.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+</html>
